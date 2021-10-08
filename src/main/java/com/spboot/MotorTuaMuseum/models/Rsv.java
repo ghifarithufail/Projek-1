@@ -25,7 +25,7 @@ public class Rsv {
     private long id;
     
     @Column(name="id_user")
-    private int id_user;
+    private long id_user;
     
     @Column(name="count")
     private String count;
@@ -39,7 +39,7 @@ public class Rsv {
     @Column(name="total_harga")
     private long total_harga;
 
-    public void setId_user(int id_user) {
+    public void setId_user(long id_user) {
         this.id_user = id_user;
     }
 

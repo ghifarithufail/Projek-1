@@ -12,7 +12,7 @@
                         <h5 class="mb-4">Judul Halaman</h5>
 
                         <form method="POST" action="#" th:action="@{/rsv/store}" th:object="${rsv}">
-                            <input type="hidden" th:field="*{id_usesr}" />
+                            <input type="hidden" th:field="*{id_user}" />
                             <div class="form-group">
                                 <label for="example-todo-title">MASUKAN ID User</label>
                                 <input th:field="*{id_user}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
