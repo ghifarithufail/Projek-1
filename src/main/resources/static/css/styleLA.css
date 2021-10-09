@@ -1,0 +1,153 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 9, 2021, 2:16:50 PM
+    Author     : bungaaaph
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(img/admintrue.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.login-box h1 {
+    float:left;
+    font-size: 40px;
+    border-bottom: 6px solid #4caf50;
+    margin-bottom: 30px;
+    padding: 5px 0;
+
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #4caf50;
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background:none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    width: 80%;
+}
+
+.btn{
+    width: 100%;
+    background:none;
+    border: 2px solid #4caf50;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin: 12px 0;   
+}
+
+.regis{
+    width: 100%;
+    background:none;
+    border: none;
+    color: white;
+    padding-left: 45px;
+    cursor: pointer;
+}
+
+.admin{
+    width: 100%;
+    background:none;
+    border: none;
+    color: white;
+    padding-left: 100px;
+    cursor: pointer;
+}body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(foto/admintrue.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.login-box h1 {
+    float:left;
+    font-size: 40px;
+    border-bottom: 6px solid #4caf50;
+    margin-bottom: 30px;
+    padding: 5px 0;
+
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #4caf50;
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background:none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    width: 80%;
+}
+
+.btn{
+    width: 100%;
+    background:none;
+    border: 2px solid #4caf50;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin: 12px 0;   
+}
+
+.regis{
+    width: 100%;
+    background:none;
+    border: none;
+    color: white;
+    padding-left: 45px;
+    cursor: pointer;
+}
+
+.admin{
+    width: 100%;
+    background:none;
+    border: none;
+    color: white;
+    padding-left: 100px;
+    cursor: pointer;
+}
