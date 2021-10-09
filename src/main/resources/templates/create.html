@@ -1,56 +1,42 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-    <head th:replace="includes/base :: css"></head>
-    <body>
-        <header th:replace="includes/base :: navbar"></header>
-
-        <main role="main " class="container">
-            <div th:replace="includes/base :: head-content"></div>
-            <div class="container mt-5">
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <h5 class="mb-4">Judul Halaman</h5>
-
-                        <form method="POST" action="#" th:action="@{/rsv/store}" th:object="${rsv}">
-                            <div class="form-group">
-                                <label for="example-todo-title">MASUKAN ID User</label>
-                                <input th:field="*{id_user}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
-                                <small id="emailHelp" class="form-text text-muted">Judul to-do minimal berisi 5 karakter.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="example-todo-title">MASUKAN JUMLAH TIKET</label>
-                                <input th:field="*{count}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
-                                <small id="emailHelp" class="form-text text-muted">Judul to-do minimal berisi 5 karakter.</small>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="example-todo-desc">Pilih Tipe Tiket</label>
-                                <textarea th:field="*{tipe_tiket}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="Enter to-do description"></textarea>
-                                <small id="emailHelp" class="form-text text-muted"></small>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="example-todo-desc">masukan tanggal </label>
-                                <textarea th:field="*{dateR}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="Enter to-do description"></textarea>
-                                <small id="emailHelp" class="form-text text-muted"></small>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="example-todo-desc">Total Harga</label>
-                                <textarea th:field="*{total_harga}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="Enter to-do description"></textarea>
-                                <small id="emailHelp" class="form-text text-muted"></small>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+<html>
+    <head>
+        <title>Motor Tua</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" th:href="@{/css/styleR.css}">
+        <script src="https://kit.fontawesome.com/0b5cba3b4d.js" crossorigin="anonymous"></script>
+    </head>
+    <body style="background-color: #009688">
+        <div class="hero">
+            <form action="prosesreservasi.html">
+                <h1>Personal Data</h1>
+               <form method="POST" action="#" th:action="@{/rsv/store}" th:object="${rsv}">
+                    <div class="row">
+                    <div class="isian">
+                        <input th:field="*{id_user}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="" required>
+                    <label for="name"><i class="fas fa-user"></i> ID User</label>
                     </div>
+                    <div class="isian">
+                        <input th:field="*{count}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="" required>
+                    <label for="number"><i class="fas fa-phone-square-alt"></i> JUMLAH TIKET</label>
+                    </div>
+                <div class="isian">
+                    <input th:field="*{tipe_tiket}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="" required>
+                <label for="email"><i class="fas fa-envelope"></i> Pilih Tipe Tiket</label>
                 </div>
+                <div class="isian">
+                    <input th:field="*{dateR}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="" required>
+                    <label for="username"><i class="fas fa-calendar-week"></i>tanggal tiket (yy/dd/mm)</label>
+                </div>
+                <div class="isian">
+                   <input th:field="*{total_harga}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="" required>
+                    <label for="alamat"><i class="far fa-map"></i> Total Harga</label>
+                </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-        </main>
-
-
-
-        <div th:replace="includes/base  :: footer"></div>
-
-        <div th:replace="includes/base  :: scripts"></div>
+            </form>
+        </div>
     </body>
 </html>
