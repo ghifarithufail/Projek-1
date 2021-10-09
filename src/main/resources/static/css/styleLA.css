@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(img/admintrue.jpg);
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),  url('../img/admin2.jpg');
     background-size: cover;
     height: 100vh;
 }
