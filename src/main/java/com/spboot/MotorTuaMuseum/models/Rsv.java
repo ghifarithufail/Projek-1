@@ -78,4 +78,13 @@ public class Rsv {
     public long getTotal_harga() {
         return total_harga;
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+    
 }

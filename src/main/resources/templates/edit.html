@@ -12,12 +12,8 @@
                         <h5 class="mb-4">Judul Halaman</h5>
 
                         <form method="POST" action="#" th:action="@{/rsv/store}" th:object="${rsv}">
-                            <input type="hidden" th:field="*{id_user}" />
-                            <div class="form-group">
-                                <label for="example-todo-title">MASUKAN ID User</label>
-                                <input th:field="*{id_user}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
-                                <small id="emailHelp" class="form-text text-muted">Judul to-do minimal berisi 5 karakter.</small>
-                            </div>
+                            <input type="hidden" th:field="*{id}" name="id"/>
+                            <input type="hidden" th:field="*{id_user}" name="id_user"/>
                             <div class="form-group">
                                 <label for="example-todo-title">MASUKAN JUMLAH TIKET</label>
                                 <input th:field="*{count}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
