@@ -27,7 +27,7 @@ public class MainController {
     @Autowired
     private RsvInterface rsvInterface;
     
-    @GetMapping("/todo/{id}/edit")
+    @GetMapping("/rsv/{id}/edit")
 public String edit(@PathVariable(value = "id") long id, Model model) {
   Rsv rsv = rsvInterface.getById(id);
 
