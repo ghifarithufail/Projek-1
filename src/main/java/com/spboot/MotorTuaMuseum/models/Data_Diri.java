@@ -56,7 +56,7 @@ public class Data_diri {
     return tanggal_lahir;
     }
     
-    public void setTAlamat(String alamat){
+    public void setAlamat(String alamat){
     this.alamat = alamat;
     }
     

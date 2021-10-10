@@ -12,6 +12,7 @@
                         <h5 class="mb-4">Judul Halaman</h5>
 
                         <form method="POST" action="#" th:action="@{/data_diri/store}" th:object="${data_diri}">
+                            <input type="hidden" th:field="*{id}" name="id"/>
                             <div class="form-group">
                                 <label for="example-todo-title">Masukan Nama Anda</label>
                                 <input th:field="*{nama}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
@@ -20,13 +21,13 @@
 
                             <div class="form-group">
                                 <label for="example-todo-desc">Masukan Tanggal Lahir</label>
-                                <textarea th:field="*{tanggal_lahir}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="Enter to-do description"></textarea>
+                                <input th:field="*{tanggal_lahir}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
                             
                             <div class="form-group">
                                 <label for="example-todo-desc">Masukan alamat </label>
-                                <textarea th:field="*{alamat}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="Enter to-do description"></textarea>
+                               <input th:field="*{alamat}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
                             
@@ -38,7 +39,7 @@
                             
                             <div class="form-group">
                                 <label for="example-todo-desc">Masukan No Telpon</label>
-                                <textarea th:field="*{no_telp}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="Enter to-do description"></textarea>
+                               <input th:field="*{no_telp}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>

@@ -14,4 +14,6 @@ import com.spboot.MotorTuaMuseum.models.User;
 public interface UserInterface {
     void login(User user) throws Exception;
     User auth(String email, String password) throws Exception;
+
+    public void register(User user);
 }

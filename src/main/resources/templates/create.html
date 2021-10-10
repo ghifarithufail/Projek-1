@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
         <title>Motor Tua</title>
         <meta charset="utf-8">
@@ -10,7 +10,7 @@
     </head>
     <body style="background-color: #009688">
         <div class="hero">
-            <form action="prosesreservasi.html">
+            <form>
                 <h1>Personal Data</h1>
                <form method="POST" action="#" th:action="@{/rsv/store}" th:object="${rsv}">
                     <div class="row">
@@ -34,7 +34,7 @@
                    <input th:field="*{total_harga}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="" required>
                     <label for="alamat"><i class="far fa-map"></i> Total Harga</label>
                 </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" value="index">Submit</button>
             </div>
             </form>
         </div>

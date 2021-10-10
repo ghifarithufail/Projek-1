@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 
 
@@ -29,8 +30,9 @@ public class MainController {
     @Autowired
     private RsvInterface rsvInterface;
     
-    @Autowired
+       @Autowired
     private Data_diriInterface data_diriInterface;
+    
     
     @GetMapping("/rsv/{id}/edit")
 public String edit(@PathVariable(value = "id") long id, Model model) {
@@ -46,7 +48,7 @@ public String delete(@PathVariable(value = "id") long id) {
   return "redirect:/";
 }
 
-     @GetMapping("/data_diri/creates")
+           @GetMapping("/data_diri/creates")
     public String creates(Model model){
         Data_diri data_diri = new Data_diri();
         model.addAttribute("data_diri", data_diri);
@@ -55,7 +57,7 @@ public String delete(@PathVariable(value = "id") long id) {
     }
     
     @PostMapping("/data_diri/store")
-    public String store(@ModelAttribute("data_diri") Data_diri data_diri) {
+    public String store(@ModelAttribute("data_diri")  Data_diri data_diri) {
         data_diriInterface.store(data_diri);
         return "redirect:/";
     }
