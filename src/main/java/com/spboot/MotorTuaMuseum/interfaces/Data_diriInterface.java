@@ -5,14 +5,14 @@
  */
 package com.spboot.MotorTuaMuseum.interfaces;
 
-import com.spboot.MotorTuaMuseum.models.DataDiri;
+import com.spboot.MotorTuaMuseum.models.Data_diri;
 import java.util.List;
 
 /**
  *
  * @author Asus
  */
-public interface DataDiriInterface {
-    List<DataDiri> getAll();
-    void store(DataDiri data_diri);
+public interface Data_diriInterface {
+    List<Data_diri> getAll();
+    void store(Data_diri data_diri);
 }

@@ -19,7 +19,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="data_diri")
 
-public class DataDiri {
+public class Data_diri {
     
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -44,7 +44,7 @@ public class DataDiri {
     this.nama = nama;
     }
     
-    public String getName(){    
+    public String getNama(){    
         return nama;
     }
     

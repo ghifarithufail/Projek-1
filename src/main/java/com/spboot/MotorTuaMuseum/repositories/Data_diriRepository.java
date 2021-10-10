@@ -5,7 +5,7 @@
  */
 package com.spboot.MotorTuaMuseum.repositories;
 
-import com.spboot.MotorTuaMuseum.models.DataDiri;
+import com.spboot.MotorTuaMuseum.models.Data_diri;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author Asus
  */
 @Repository
-public interface DataDiriRepository extends JpaRepository<DataDiri, Long>{
+public interface Data_diriRepository extends JpaRepository<Data_diri, Long>{
     
 }
