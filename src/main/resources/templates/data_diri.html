@@ -13,31 +13,31 @@
 
                         <form method="POST" action="#" th:action="@{/data_diri/store}" th:object="${data_diri}">
                             <input type="hidden" th:field="*{id}" name="id"/>
-                            <div class="form-group">
+                            <div class="textbox">
                                 <label for="example-todo-title">Masukan Nama Anda</label>
                                 <input th:field="*{nama}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
                                 <small id="emailHelp" class="form-text text-muted">Judul to-do minimal berisi 5 karakter.</small>
                             </div>
 
-                            <div class="form-group">
+                            <div class="textbox">
                                 <label for="example-todo-desc">Masukan Tanggal Lahir</label>
                                 <input th:field="*{tanggal_lahir}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
                             
-                            <div class="form-group">
+                            <div class="textbox">
                                 <label for="example-todo-desc">Masukan alamat </label>
                                <input th:field="*{alamat}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
                             
-                            <div class="form-group">
+                            <div class="textbox">
                                 <label for="example-todo-desc">Masukan email</label>
-                                <textarea th:field="*{email}" rows="3" class="form-control" id="example-todo-desc" aria-describedby="emailHelp" placeholder="Enter to-do description"></textarea>
+                               <input th:field="*{email}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
                             
-                            <div class="form-group">
+                            <div class="textbox">
                                 <label for="example-todo-desc">Masukan No Telpon</label>
                                <input th:field="*{no_telp}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
                                 <small id="emailHelp" class="form-text text-muted"></small>
@@ -49,7 +49,35 @@
             </div>
         </main>
 
+         <style>
+                .background{
+                     margin: 0;
+                     padding: 0;
+                     font-family: sans-serif;
+                     background: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),  url('../img/harley.jpg');
+                     background-size: cover;
+                     height: 100%;
+                     color: white
+                }
+                .textbox{
+                width: 100%;
+                overflow: hidden;
+                font-size: 20px;
+                padding: 8px 0;
+                margin: 8px 0;
+                border-bottom: 1px solid #4caf50;
+                }
 
+                .textbox input{
+                    border: none;
+                    outline: none;
+                    background:none;
+                    color: white;
+                    font-size: 18px;
+                    margin: 0 10px;
+                    width: 80%;
+                }
+            </style>
 
         <div th:replace="includes/base  :: footer"></div>
 
