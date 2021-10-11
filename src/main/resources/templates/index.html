@@ -29,18 +29,25 @@
                                             <i class='bx bx-pencil'></i>
                                         </a>
                                         <form onSubmit="return confirm('Do you really want to delete to-do?')" method="POST" action="#" th:action="@{/rsv/{id_user}/delete(id_user=${ rsv.id_user })}">
+                                            
                                             <button type="submit" class="btn btn-danger text-white "><i class='bx bx-trash'></i></button>
                                         </form>
                                     </div>
                                 </td>
                             </tr>
                         </table>
+                    </div >
+                    <div class="col-12-sm">
+                    <a th:href="@{/home}">
+                            <button type="submit" class="btn-info text-center">Back</button>
+                            </a>
                     </div>
                 </div>
             </div>
         </main>
-
-
+        
+      
+        
 
         <div th:replace="includes/base  :: footer"></div>
 

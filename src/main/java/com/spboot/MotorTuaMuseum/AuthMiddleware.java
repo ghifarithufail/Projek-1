@@ -5,10 +5,6 @@
  */
 package com.spboot.MotorTuaMuseum;
 
-/**
- *
- * @author Asus
- */
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.regex.Matcher;
@@ -28,8 +24,7 @@ import org.springframework.stereotype.Component;
  *
  * @author Hudya
  */
-@Component
-@Order(1)
+
 public class AuthMiddleware implements Filter {
 
     @Override

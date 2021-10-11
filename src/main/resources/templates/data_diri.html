@@ -42,7 +42,9 @@
                                <input th:field="*{no_telp}" type="text" class="form-control" id="example-todo-title" aria-describedby="emailHelp" placeholder="Enter to-do title" required>
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
+                            <a th:href="@{/rsv/create}">
                             <button type="submit" class="btn btn-primary">Submit</button>
+                            </a>
                         </form>
                     </div>
                 </div>
@@ -61,7 +63,6 @@
                 }
                 .textbox{
                 width: 100%;
-                overflow: hidden;
                 font-size: 20px;
                 padding: 8px 0;
                 margin: 8px 0;
@@ -72,7 +73,7 @@
                     border: none;
                     outline: none;
                     background:none;
-                    color: white;
+                    color: black;
                     font-size: 18px;
                     margin: 0 10px;
                     width: 80%;

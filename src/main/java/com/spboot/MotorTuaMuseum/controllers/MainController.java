@@ -59,7 +59,7 @@ public String delete(@PathVariable(value = "id") long id) {
     @PostMapping("/data_diri/store")
     public String store(@ModelAttribute("data_diri")  Data_diri data_diri) {
         data_diriInterface.store(data_diri);
-        return "redirect:/";
+        return "redirect:/rsv/create";
     }
 
     @GetMapping("/")

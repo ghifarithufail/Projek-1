@@ -27,7 +27,7 @@ public class UserService implements UserInterface {
 
    
 
-    private String hash(String password) throws Exception {
+        private String hash(String password) throws Exception {
         MessageDigest md = MessageDigest.getInstance("MD5");
 
         byte[] messageDiggest = md.digest(password.getBytes());
@@ -48,10 +48,7 @@ public class UserService implements UserInterface {
         return password.equals(rawPassword);
     }
 
-    @Override
-    public void login(User user) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
 
   @Override
     public User auth(String email, String password) throws Exception {
