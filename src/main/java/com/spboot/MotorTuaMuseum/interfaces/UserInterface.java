@@ -16,4 +16,5 @@ public interface UserInterface {
     User auth(String email, String password) throws Exception;
 
     public void register(User user);
+
 }

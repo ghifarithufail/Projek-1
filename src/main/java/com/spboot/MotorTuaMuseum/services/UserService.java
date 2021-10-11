@@ -72,5 +72,4 @@ public class UserService implements UserInterface {
     public void register(User user) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
 }

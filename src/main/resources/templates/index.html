@@ -17,6 +17,7 @@
                                 <th>Total Harga</th>
                                 <th>Action</th>
                             </tr>
+                            <h1>Hello, <span th:text="${session.name}"></span>!</h1>
                                 <tr th:each="rsv : ${list}">
                                      <td th:text="${ rsv.count }"></td>
                                     <td th:text="${ rsv.tipe_tiket }"></td>

@@ -32,10 +32,10 @@ public class RegisterController {
 
         return "register";
     }
-
-    @PostMapping("/register")
+ @PostMapping("/register")
     public String store(@ModelAttribute("user") User user) throws Exception {
         userInterface.register(user);
         return "redirect:/login";
     }
+
 }

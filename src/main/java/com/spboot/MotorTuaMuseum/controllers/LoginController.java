@@ -46,7 +46,7 @@ public class LoginController {
 
         if (obj == null) {
             session.setAttribute("error", "Invalid username or password!");
-            return "redirect:/login";
+            return "redirect:/";
         }
 
         session.setAttribute("id", obj.getId());
@@ -54,7 +54,7 @@ public class LoginController {
         session.setAttribute("name", obj.getName());
         session.setAttribute("loggedIn", true);
 
-        return "redirect:/";
+        return "redirect:/index";
     }
 
 }
