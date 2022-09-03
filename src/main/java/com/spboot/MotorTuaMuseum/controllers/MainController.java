@@ -41,6 +41,7 @@ public String edit(@PathVariable(value = "id") long id, Model model) {
   model.addAttribute("rsv", rsv);
   return "edit";
 }
+ 
 
 @PostMapping("/rsv/{id}/delete")
 public String delete(@PathVariable(value = "id") long id) {
@@ -80,7 +81,7 @@ public String delete(@PathVariable(value = "id") long id) {
     @PostMapping("/rsv/store")
     public String store(@ModelAttribute("rsv") Rsv rsv) {
         rsvInterface.store(rsv);
-        return "redirect:/";
+        return "redirect:/home";
     }
     
     @GetMapping("/gallery")

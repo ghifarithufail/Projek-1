@@ -10,6 +10,7 @@ import com.spboot.MotorTuaMuseum.models.User;
 /**
  *
  * @author bungaaaph
+ *
  */
 public interface UserInterface {
     User auth(String email, String password) throws Exception;

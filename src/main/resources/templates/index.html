@@ -11,18 +11,18 @@
                     <div class="col-12 mt-5">
                         <table class="table table-hover">
                             <tr>
+                                <th>ID User</th>
                                 <th>Count</th>
                                 <th>Tipe Tiket</th>
                                 <th>Tanggal </th>
-                                <th>Total Harga</th>
                                 <th>Action</th>
                             </tr>
                             <h1>Hello, <span th:text="${session.name}"></span>!</h1>
                                 <tr th:each="rsv : ${list}">
+                                    <td th:text="${ rsv.id_user }"></td>
                                      <td th:text="${ rsv.count }"></td>
                                     <td th:text="${ rsv.tipe_tiket }"></td>
                                     <td th:text="${ rsv.dateR }"></td>
-                                    <td th:text="${ rsv.total_harga }"></td>
                                 <td>
                                     <div class="btn-group " role="group " aria-label="Basic example ">
                                         <a th:href="@{/rsv/{id_user}/edit(id_user=${ rsv.id_user })}"  class="btn btn-info text-white ">
